@@ -1,10 +1,7 @@
 import numpy as np
 import pandas as pd
 def Linear_Max_Min(attribute, Type):
-    """
-    Patro, S. and Sahu, K.K., 2015. Normalization: A preprocessing stage.
-    arXiv preprint arXiv:1503.06462.
-    """
+   
     MIN = min(attribute)
     MAX = max(attribute)
     Var = MAX - MIN
