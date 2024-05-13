@@ -14,11 +14,7 @@ def Linear_Max_Min(attribute, Type):
     return Attribute
 
 def Linear_Max(attribute, Type):
-    """
-    Çelen, A., 2014. Comparative analysis of normalization procedures in
-    TOPSIS method: with an application to Turkish deposit banking market.
-    Informatica, 25(2), pp.185-208.
-    """
+    
     MAX = max(attribute)
     attribute = np.array(attribute)
     if Type == "profit":
@@ -29,12 +25,7 @@ def Linear_Max(attribute, Type):
     return Attribute
 
 def Linear_sum(attribute, Type):
-    """
-    Jahan, A. and Edwards, K.L. (2014) ‘A state-of-the-art survey on the
-    influence of normalization techniques in ranking: improving the materials
-    selection process in engineering design’, Mater. Des., Vol. 65, No. 2015,
-    pp.335–342.
-    """
+    
     SUM_1 = sum(attribute)
     SUM_2 = sum(1/attribute)
     attribute = np.array(attribute)
@@ -47,12 +38,7 @@ def Linear_sum(attribute, Type):
 
 
 def Vector_Normalization(attribute, Type):
-    """
-    Jahan, A. and Edwards, K.L. (2014) ‘A state-of-the-art survey on the
-    influence of normalization techniques in ranking: improving the materials
-    selection process in engineering design’, Mater. Des., Vol. 65, No. 2015,
-    pp.335–342.
-    """
+   
     r = (sum(attribute**2))**(0.5)
     if Type == "profit":
         Attribute = attribute/r 
@@ -63,12 +49,7 @@ def Vector_Normalization(attribute, Type):
 
 
 def Logarithmic_normalisation(attribute, Type):
-    """
-    Jahan, A. and Edwards, K.L. (2014) ‘A state-of-the-art survey on the
-    influence of normalization techniques in ranking: improving the materials
-    selection process in engineering design’, Mater. Des., Vol. 65, No. 2015,
-    pp.335–342.
-    """
+   
     r = np.log(np.prod(attribute))
     if Type == "profit":
         Attribute = np.log(attribute)/r
