@@ -20,15 +20,7 @@ PC = [1, 1, 1, 1, 1]
 
 def TOPSIS(Decision_Matrix, Weights, Attribute_Type, Normalization_Method = Linear_sum):
     
-    """
-    TOPSIS implementation based on this publication:
-        * C.-L. Hwang and K. Yoon, Multiple attribute decision making,
-        ser. Lecture Notes in Economics and Mathematical Systems.
-        Springer-Verlag Berlin Heidelberg, 1981, vol. 186,ethod = Normalization_Method
-        ISBN: 9783540105589.
-        Book Link: https://www.springer.com/gp/book/9783540105589
-    """
-    
+   
     Normalizaed_Decision_matrix = Normalize_Decision_Matrix(Decision_Matrix = Decision_Matrix,
                                                             Attribute_Type=Attribute_Type,
                                                             Normal_Method=Normalization_Method)
